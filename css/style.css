@@ -414,7 +414,6 @@
 .projects .row .item:nth-child(6){
     background: url(../assets/project-img-6.png) center/cover no-repeat;
 }
-
 .projects .item .item-overlay{
     position: absolute;
     top: 0;
@@ -439,12 +438,11 @@
 .projects .item .item-overlay h3{
     text-transform: uppercase;
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 .projects .item:hover .item-overlay{
     opacity: 0.9;
 }
-
 
 
 /* ### projects section ends ### */
