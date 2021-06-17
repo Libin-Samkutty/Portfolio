@@ -397,22 +397,22 @@
     position: relative;
 }
 .projects .row .item:nth-child(1){
-    background: url(assets/project-img-1.png) center/cover no-repeat;
+    background: url(../assets/project-img-1.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(2){
-    background: url(assets/project-img-2.png) center/cover no-repeat;
+    background: url(../assets/project-img-2.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(3){
-    background: url(assets/project-img-3.png) center/cover no-repeat;
+    background: url(../assets/project-img-3.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(4){
-    background: url(assets/project-img-4.png) center/cover no-repeat;
+    background: url(../assets/project-img-4.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(5){
-    background: url(assets/project-img-5.png) center/cover no-repeat;
+    background: url(../assets/project-img-5.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(6){
-    background: url(assets/project-img-6.png) center/cover no-repeat;
+    background: url(../assets/project-img-6.png) center/cover no-repeat;
 }
 
 .projects .item .item-overlay{
