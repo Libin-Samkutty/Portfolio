@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a href="projects.html" class="nav-link">Projects</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="blogs.html" class="nav-link">Blogs</a>
+                    </li>
                     <li class="nav-item nav-active">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
@@ -110,16 +113,70 @@
         </div>
     </section>
 
-    <script>
-        function sendEmail() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            const mailtoLink = `mailto:samlibin2001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hey there, Libin! I am ${name}.\n${message}`)}`;
-            window.location.href = mailtoLink;
-        }
-    </script>
+        <!-- ### footer section starts ### -->
+    
+        <footer class="footer container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="footer-title">About</h3>
+                    <p class="text">QA Engineer with proven expertise in test automation, API testing, and performance optimization. Recognized for reducing test execution time, enhancing test coverage, and driving team performance.</p>
+                    <div class="social-links">
+                        <a href="mailto:samlibin2001@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/917802865503" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://telegram.me/Libin_Samkutty" target="_blank"><i class="fab fa-telegram" target="_blank"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="resume.html" class="text">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            Professional Experience
+                        </a>
+                        <a href="skills.html" class="text">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            Technical Skills
+                        </a>
+                        <a href="projects.html" class="text">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            Project Highlights
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title">Achievements</h3>
+                    <div class="footer-links">
+                        <div>
+                            <span><i class="fa fa-trophy"></i></span>
+                            <span class="text">&nbsp;QA Achiever (2022)</span>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-trophy"></i></span>
+                            <span class="text">&nbsp;Mr. Jeavian (2023)</span>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-trophy"></i></span>
+                            <span class="text">&nbsp;Multiple client appreciations <br> (2022, 2023, 2024)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title">Contact Information</h3>
+                    <div>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text">&nbsp;Vadodara, Gujarat, India</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <span class="text">&nbsp;samlibin2001@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="text">Copyright &copy; 2025 | All Rights Reserved | By Libin Samkutty</p>
+            </div>
+        </footer>
+    
+        <script src="js/script.js"></script>  
 </body>
 </html>
