@@ -71,7 +71,7 @@
 /* ### show nav class ### */
 
 .showNav{
-    height: 385px;
+    height: 308px;
 }
 
 .home{
@@ -135,6 +135,22 @@
     color: #fff;
 }
 
+.home-proof-points{
+    margin-top: 1rem;
+    text-align: left;
+}
+.home-proof-points .proof-item{
+    display: flex;
+    align-items: flex-start;
+    margin: 0.5rem 0;
+    gap: 0.6rem;
+}
+.home-proof-points .proof-item i{
+    color: var(--green);
+    font-size: 1rem;
+    margin-top: 0.15rem;
+    flex-shrink: 0;
+}
 
 .home .img-container{
     position: relative;
