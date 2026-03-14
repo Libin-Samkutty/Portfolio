@@ -71,7 +71,7 @@
 /* ### show nav class ### */
 
 .showNav{
-    height: 308px;
+    height: auto;
 }
 
 .home{
@@ -79,7 +79,8 @@
 }
 
 .home .row > div{
-    height: 60vh;
+    min-height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +134,16 @@
 .home-pg-btn button:last-child{
     background: transparent;
     color: #fff;
+}
+
+.btn-outline{
+    background: transparent !important;
+    border: 2px solid var(--green) !important;
+    color: var(--green) !important;
+}
+.btn-outline:hover{
+    background: var(--green) !important;
+    color: #fff !important;
 }
 
 .home-proof-points{
@@ -323,99 +334,141 @@
 
 /* ### skills section starts ### */
 
-.skills{
-    padding: 5rem 0 2.5rem 0;
+.skills {
+    padding: 5rem 0 4rem 0;
 }
-.skills > text{
-    width: 70%;
-    margin: 1.5rem auto;
+
+.skills-intro {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
     text-align: center;
 }
-.skills .row{
-    margin: 1rem 0;
+
+/* Category block */
+.skills-category {
+    margin-top: 3rem;
 }
-.skills .item{
-    padding: 0.5rem 0;
-    margin: 0.3rem 0;
-}
-.skills .item-text{
+
+.skills-category-header {
     display: flex;
-    justify-content: flex-start;
-    font-weight: 600;
-    font-size: 1.3rem;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--nero);
     position: relative;
 }
-.skills .item-text span:last-child{
+
+.skills-category-header::after {
+    content: "";
     position: absolute;
-}
-.skills .item-text .w-90{
-    margin-left: 90%;
-}
-.skills .item-text .w-85{
-    margin-left: 85%;
-}
-.skills .item-text .w-80{
-    margin-left: 80%;
-}
-.skills .item-text .w-75{
-    margin-left: 75%;
-}
-.skills .item-text .w-70{
-    margin-left: 70%;
-}
-.skills .item-text .w-65{
-    margin-left: 65%;
-}
-.skills .item-text .w-60{
-    margin-left: 60%;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--green);
 }
 
-.skills-section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.skills-category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #fff;
+    flex-shrink: 0;
 }
 
-.skills-section h3 {
-    border-bottom: 2px solid green;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #ffffff;
+.skills-category-header h3 {
+    font-family: var(--poppins);
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 0;
 }
-.progress{
-    margin: 0.8rem 0;
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Individual skill card */
+.skill-card {
+    background: var(--nero);
     border-radius: 10px;
-    height: 16px;
-    width: 100%;
-    background-color: var(--nero);
+    padding: 1rem 1.25rem;
+    border: 1px solid #2e2e2e;
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    border-color: var(--green);
+    transform: translateY(-2px);
+}
+
+.skill-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.skill-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.skill-icon {
+    color: var(--green);
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.skill-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.skill-percent {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--green);
+    font-family: var(--poppins);
+    flex-shrink: 0;
+}
+
+/* Progress bar */
+.progress {
+    height: 6px;
+    border-radius: 10px;
+    background: #1a1a1a;
     overflow: hidden;
 }
-.progress-bar{
-    background: var(--green);
+
+.progress-bar {
     height: 100%;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--green), #9dd63a);
 }
-.progress-bar.w-90{
-    width: 90%;
-}
-.progress-bar.w-85{
-    width: 85%;
-}
-.progress-bar.w-80{
-    width: 80%;
-}
-.progress-bar.w-75{
-    width: 75%;
-}
-.progress-bar.w-70{
-    width: 70%;
-}
-.progress-bar.w-65{
-    width: 65%;
-}
-.progress-bar.w-60{
-    width: 60%;
-}
+
+.progress-bar.w-90 { width: 90%; }
+.progress-bar.w-85 { width: 85%; }
+.progress-bar.w-80 { width: 80%; }
+.progress-bar.w-75 { width: 75%; }
+.progress-bar.w-70 { width: 70%; }
+.progress-bar.w-65 { width: 65%; }
+.progress-bar.w-60 { width: 60%; }
 
 /* ### skills section ends ### */
 
@@ -816,10 +869,8 @@
         margin: 1rem;
     }
     /* skills page */
-    .skills .row{
-        display: grid;
+    .skills-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
     }
     /* projects page */
     .projects .row{
@@ -960,53 +1011,3 @@
     }
 }
 
-/* Add this to your style.css */
-@media screen and (max-width: 768px) {
-    .skills-section .item {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skills-section .item-text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 5px;
-    }
-
-    .skills-section .item-text span {
-        font-size: 0.9em;
-    }
-
-    .skills-section .item-text span:first-child {
-        flex-grow: 1;
-        margin-right: 10px;
-    }
-
-    .skills-section .progress {
-        width: 100%;
-        height: 10px;
-        background-color: #f0f0f0;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-
-    .skills-section .progress-bar {
-        height: 100%;
-        background-color: #4CAF50;
-        transition: width 0.5s ease-in-out;
-    }
-}
-
-/* Optional: Ensure better readability on smaller screens */
-@media screen and (max-width: 480px) {
-    .skills-section .item-text {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .skills-section .item-text span:last-child {
-        margin-top: 5px;
-        align-self: flex-end;
-    }
-}
