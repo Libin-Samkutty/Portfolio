@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="QA Case Studies by Libin Samkutty">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="assets/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Blog</title>
+    <title>Libin Samkutty | Case Studies</title>
 </head>
 <body>
     <nav class="navbar">
@@ -44,11 +43,8 @@
                     <li class="nav-item">
                         <a href="automation-projects.html" class="nav-link">Automation</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link">Side Projects</a>
-                    </li>
                     <li class="nav-item nav-active">
-                        <a href="blogs.html" class="nav-link">Blogs</a>
+                        <a href="case-studies.html" class="nav-link">Case Studies</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -60,46 +56,96 @@
 
     <!-- ### end of navbar section ### -->
 
-    <!-- ### blogs page ### -->
+    <!-- ### case studies page ### -->
 
     <section class="blog container">
         <div class="title">
-            <h2>Posts</h2>
+            <h2>Case Studies</h2>
             <div>
-                <h2>My Blogs</h2>
+                <h2>QA Case Studies</h2>
             </div>
         </div>
-        <p class="text">I enjoy reading articles where individuals share their knowledge and experiences through blogs. I plan to add more such posts in the future.</p>
+        <p class="text">In-depth technical case studies from my QA engineering work on a conversational AI health chatbot - covering test automation, multi-channel architecture, production monitoring, performance engineering, and AI validation at scale.</p>
 
         <div class="row">
             <div class="item">
                 <div class="item-img">
-                    <img src="assets/blog-img-1.jpg" alt="How to Start Your Corporate Career?">
+                    <img src="assets/botium-chatbot-testing.png" alt="Scaling Regression Testing with Botium">
                 </div>
                 <div class="item-content">
-                    <span>Date: 23/08/2023 | 6 min read</span>
-                    <h2>How to Start Your Corporate Career?</h2>
-                    <p class="text">Congratulations on embarking on a new journey! You've done it, and you have now completed the first step toward financial freedom, which is getting a job/paid internship.</p>
-                    <button type="button" class="btn" onclick="location.href='blog-post-1.html'">Read More</button>
+                    <span>Quality Engineering &middot; Conversational AI &middot; Test Automation</span>
+                    <h2>Scaling Chatbot Regression Testing with Botium</h2>
+                    <p class="text">How I replaced a 5 FTE-day manual regression cycle with an automated Botium suite - achieving 75% coverage across 140+ flows and a 60% reduction in effort for a health chatbot serving 50K monthly users.</p>
+                    <button type="button" class="btn" onclick="location.href='case-study-01.html'">Read Case Study</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <img src="assets/multi-channel-testing.png" alt="Multi-Channel Testing Architecture">
+                </div>
+                <div class="item-content">
+                    <span>Quality Engineering &middot; Test Architecture &middot; Conversational AI</span>
+                    <h2>Designing a Multi-Channel Chatbot Testing Architecture</h2>
+                    <p class="text">How I designed a channel-abstracted framework that runs the same 140+ test scripts across WhatsApp and Facebook Messenger with near-zero duplication and effortless platform expansion.</p>
+                    <button type="button" class="btn" onclick="location.href='case-study-02.html'">Read Case Study</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <img src="assets/health-monitoring-system.png" alt="Automated Health Monitoring System">
+                </div>
+                <div class="item-content">
+                    <span>Quality Engineering &middot; Infrastructure Monitoring &middot; DevOps</span>
+                    <h2>Building an Automated Chatbot Health Monitoring System</h2>
+                    <p class="text">How I extended QA's scope into production reliability - building an hourly automated health-check pipeline on AWS EC2 with Slack alerting using Botium and Python.</p>
+                    <button type="button" class="btn" onclick="location.href='case-study-03.html'">Read Case Study</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <img src="assets/performance-monitoring.png" alt="Performance Monitoring via Test Flows">
+                </div>
+                <div class="item-content">
+                    <span>Quality Engineering &middot; Performance Monitoring &middot; Conversational AI</span>
+                    <h2>Monitoring Chatbot Performance Through Automated Test Flows</h2>
+                    <p class="text">How I extended Botium to capture response-time baselines across every release - enabling early performance regression detection and data-driven infrastructure planning.</p>
+                    <button type="button" class="btn" onclick="location.href='case-study-04.html'">Read Case Study</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <img src="assets/conversational-onboarding.png" alt="Conversational Onboarding Validation">
+                </div>
+                <div class="item-content">
+                    <span>Quality Engineering &middot; Conversational AI &middot; Global Health</span>
+                    <h2>Validating Conversational Onboarding for a Global Health Chatbot</h2>
+                    <p class="text">How I led QA for an AI-driven onboarding redesign serving ~2M users across India, Kenya, and Nigeria - covering AI classification, multilingual validation, and telemetry integrity.</p>
+                    <button type="button" class="btn" onclick="location.href='case-study-05.html'">Read Case Study</button>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <!-- ### end of blogs page ### -->
+    <!-- ### end of case studies page ### -->
 
     <!-- ### footer section starts ### -->
-    
+
     <footer class="footer container">
         <div class="row">
             <div class="col">
                 <h3 class="footer-title">About</h3>
-                <p class="text">QA Engineer with proven expertise in test automation, API testing, and performance optimization. Recognized for reducing test execution time, enhancing test coverage, and driving team performance.</p>
+                <p class="text">Senior QA Engineer delivering measurable quality outcomes - 60% regression effort reduction, 75% automated test coverage and production reliability for 50,000+ monthly users.</p>
                 <div class="social-links">
                     <a href="mailto:samlibin2001@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     <a href="https://wa.me/917802865503" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://telegram.me/Libin_Samkutty" target="_blank"><i class="fab fa-telegram" target="_blank"></i></a>
+                    <a href="https://telegram.me/Libin_Samkutty" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/libin-samkutty/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Libin-Samkutty" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="col">
@@ -149,7 +195,7 @@
             </div>
         </div>
         <div class="footer-text">
-            <p class="text">Copyright &copy; 2025 | All Rights Reserved | By Libin Samkutty</p>
+            <p class="text">Copyright &copy; 2026 | All Rights Reserved | By Libin Samkutty</p>
         </div>
     </footer>
 

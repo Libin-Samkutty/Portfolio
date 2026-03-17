@@ -146,21 +146,29 @@
     color: #fff !important;
 }
 
-.home-proof-points{
-    margin-top: 1rem;
-    text-align: left;
-}
-.home-proof-points .proof-item{
+.home-specialties {
     display: flex;
-    align-items: flex-start;
-    margin: 0.5rem 0;
+    flex-wrap: wrap;
     gap: 0.6rem;
+    margin: 1.2rem 0 1.6rem;
 }
-.home-proof-points .proof-item i{
+.home-specialties span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--green);
     color: var(--green);
-    font-size: 1rem;
-    margin-top: 0.15rem;
-    flex-shrink: 0;
+    font-family: var(--poppins);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+}
+.home-specialties span i {
+    font-size: 0.75rem;
+    opacity: 0.85;
 }
 
 .home .img-container{
@@ -760,7 +768,7 @@
 .blog-post {
     max-width: 800px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 80px 20px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: start; /* Left-align the text */
@@ -1011,3 +1019,144 @@
     }
 }
 
+/* ===== Case Study detail page styles ===== */
+.blog-post h2 {
+    font-size: 1.7rem;
+    color: var(--green);
+    margin: 2rem 0 0.75rem;
+    font-family: var(--poppins);
+}
+.blog-post h3 {
+    font-size: 1.2rem;
+    color: lightgray;
+    margin: 1.5rem 0 0.6rem;
+    font-family: var(--poppins);
+}
+.blog-post p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+.blog-post ul {
+    margin: 0.5rem 0 1.2rem 1.8rem;
+}
+.blog-post ul li {
+    color: whitesmoke;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+.blog-post pre {
+    background: #1a1a1a;
+    padding: 1.2rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 1rem 0 1.5rem;
+    border-left: 3px solid var(--green);
+    color: #d4d4d4;
+}
+.blog-post code {
+    font-family: 'Courier New', monospace;
+    color: #d4d4d4;
+}
+.blog-post table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+.blog-post table th {
+    background: var(--green);
+    color: var(--black);
+    padding: 0.6rem 1rem;
+    text-align: left;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+.blog-post table td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #333;
+    color: whitesmoke;
+}
+.blog-post table tr:nth-child(even) td {
+    background: #1e1e1e;
+}
+.blog-post hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 2rem 0;
+}
+.blog-post .back-link {
+    display: inline-block;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+.blog-post .back-link:hover {
+    opacity: 0.75;
+}
+.blog-post .cs-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1.5rem;
+}
+.blog-post .cs-tag {
+    background: #1e1e1e;
+    color: var(--green);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-family: var(--poppins);
+    border: 1px solid #333;
+}
+
+
+/* ===== Quality Impact section ===== */
+.quality-impact {
+    padding: 3rem 0 4rem;
+}
+.impact-label {
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--green);
+    margin-bottom: 1.8rem;
+}
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.impact-item {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid var(--green);
+    border-radius: 6px;
+    padding: 1.4rem 1.6rem;
+}
+.impact-number {
+    font-family: var(--poppins);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--green);
+    line-height: 1.1;
+    margin-bottom: 0.6rem;
+}
+.impact-desc {
+    font-size: 0.92rem;
+    color: #aaa;
+    line-height: 1.55;
+}
+@media (max-width: 600px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
