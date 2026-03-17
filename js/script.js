@@ -1,3 +1,8 @@
+const keyInput = document.getElementById('web3forms-key');
+if (keyInput && typeof CONFIG !== 'undefined') {
+    keyInput.value = CONFIG.WEB3FORMS_ACCESS_KEY;
+}
+
 const navBtn = document.querySelector('#navbar-toggler');
 const navDiv = document.querySelector('.navbar-collapse');
 
@@ -16,12 +21,3 @@ window.addEventListener('resize', () => {
     }, 400);
 });
 
-function sendEmail() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-
-    const mailtoLink = `mailto:samlibin2001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hey there, Libin! I am ${name}.\n${message}`)}`;
-    window.location.href = mailtoLink;
-}

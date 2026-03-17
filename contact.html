@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Contact page">
+    <meta name="description" content="Get in touch with Libin Samkutty - Senior QA Engineer. Available for QA roles, collaborations, and conversations.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="assets/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Contact</title>
+    <title>Libin Samkutty | Contact</title>
 </head>
 <body>
     <nav class="navbar">
@@ -45,7 +44,7 @@
                         <a href="automation-projects.html" class="nav-link">Automation</a>
                     </li>
                     <li class="nav-item">
-                        <a href="projects.html" class="nav-link">Side Projects</a>
+                        <a href="case-studies.html" class="nav-link">Case Studies</a>
                     </li>
                     <li class="nav-item nav-active">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -63,12 +62,12 @@
             </div>
         </div>
 
-        <p class="text">This portfolio is a work in progress, and I am continuously looking to improve it. If you have any suggestions or feedback, please feel free to reach out using the details below.</p>
+        <p class="text">Whether you have a QA role in mind, want to discuss automation strategy, or simply want to connect — feel free to reach out. I'll get back to you as soon as possible.</p>
 
         <div class="row">
             <div class="col-left">
                 <h2>Feel Free to Contact Me!</h2>
-                <p class="text">I welcome any feedback or advice to help me grow. If you have suggestions or would like to have a conversation, please reach out via email or phone, and I will respond as soon as possible. <br><b>Thank you!</b></p>
+                <p class="text">Open to QA roles, consulting conversations, and professional connections. Reach out via email or any of the links below — I'll respond promptly. <br><b>Thank you!</b></p>
 
                 <div class="contact-info">
                     <span><i class="fas fa-envelope-open"></i></span>
@@ -96,17 +95,24 @@
                     <a href="https://telegram.me/Libin_Samkutty" target="_blank">
                         <i class="fab fa-telegram"></i>
                     </a>
+                    <a href="https://www.linkedin.com/in/libin-samkutty/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Libin-Samkutty" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="col-right">
-                <form id="contact-form" class="contact-form"  onsubmit="sendEmail()">
+                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" id="web3forms-key">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
-                    <textarea id="subject" rows="2" placeholder="Your Subject" required></textarea>
-                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="text" id="subject" name="_subject" placeholder="Your Subject" required>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
@@ -119,11 +125,13 @@
             <div class="row">
                 <div class="col">
                     <h3 class="footer-title">About</h3>
-                    <p class="text">QA Engineer with proven expertise in test automation, API testing, and performance optimization. Recognized for reducing test execution time, enhancing test coverage, and driving team performance.</p>
+                    <p class="text">Senior QA Engineer delivering measurable quality outcomes - 60% regression effort reduction, 75% automated test coverage and production reliability for 50,000+ monthly users.</p>
                     <div class="social-links">
                         <a href="mailto:samlibin2001@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                         <a href="https://wa.me/917802865503" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://telegram.me/Libin_Samkutty" target="_blank"><i class="fab fa-telegram" target="_blank"></i></a>
+                        <a href="https://telegram.me/Libin_Samkutty" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/libin-samkutty/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Libin-Samkutty" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="col">
@@ -173,10 +181,11 @@
                 </div>
             </div>
             <div class="footer-text">
-                <p class="text">Copyright &copy; 2025 | All Rights Reserved | By Libin Samkutty</p>
+                <p class="text">Copyright &copy; 2026 | All Rights Reserved | By Libin Samkutty</p>
             </div>
         </footer>
     
-        <script src="js/script.js"></script>  
+        <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
