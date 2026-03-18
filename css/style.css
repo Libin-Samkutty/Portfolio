@@ -1160,3 +1160,181 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Featured OSS card ===== */
+
+.resume .item--featured {
+    border-left: 3px solid var(--green);
+    background: #141a0e;
+    border-radius: 0 8px 8px 0;
+    padding: 1.6rem 2.5rem;
+    box-shadow: inset 0 0 0 1px #1e2a14;
+}
+
+.oss-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.6rem 0 1rem;
+}
+
+.oss-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: #1a2410;
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    font-family: var(--poppins);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.oss-badge i {
+    font-size: 0.72rem;
+    opacity: 0.9;
+}
+
+.oss-install {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #9dd63a;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border-left: 3px solid var(--green);
+    margin: 0.5rem 0 1rem;
+    letter-spacing: 0.01em;
+}
+
+.oss-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.oss-stats strong {
+    color: var(--green);
+    font-family: var(--poppins);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.oss-stats a {
+    color: #bbb;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: var(--transition);
+}
+
+.oss-stats a:hover {
+    color: var(--green);
+}
+
+.oss-stats .oss-sep {
+    color: #444;
+    font-size: 0.8rem;
+}
+
+/* ===== Homepage OSS callout banner ===== */
+
+.oss-callout {
+    padding: 0 0 3rem;
+}
+
+.oss-callout-card {
+    background: #141a0e;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid var(--green);
+    border-radius: 8px;
+    padding: 1.4rem 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 2rem;
+}
+
+.oss-callout-left {
+    flex: 1 1 320px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.oss-callout-icon {
+    color: var(--green);
+    font-size: 1.6rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.oss-callout-text p {
+    font-size: 0.92rem;
+    color: #aaa;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.oss-callout-text strong {
+    display: block;
+    font-family: var(--poppins);
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.oss-callout-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+}
+
+.oss-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--poppins);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    padding: 0.25rem 0.75rem;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.oss-link:hover {
+    background: var(--green);
+    color: var(--black);
+}
+
+@media (max-width: 600px) {
+    .oss-callout {
+        padding: 0 0 1.5rem;
+    }
+    .oss-callout-card {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem 1.2rem;
+    }
+    .oss-callout-left {
+        flex-basis: auto;
+    }
+    .oss-callout-right {
+        width: 100%;
+    }
+}
