@@ -213,35 +213,270 @@
 .about{
     padding: 5rem 0 2.5rem 0;
 }
-.about .row-right{
-    padding: 3rem 0;
-}
-.about .row-right p{
-    margin: 1rem 0;
-}
-.about-content{
-    margin: 1.5rem 0;
-}
-.about-content li{
+/* --- Profile header --- */
+.about-header{
     display: flex;
-    margin: 0.6rem 0;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0 2rem;
 }
-.about-content li span{
+.about .img-border{
+    background: var(--nero);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.about .img-container{
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-name{
+    font-size: 2rem;
+    font-family: var(--poppins);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+.about-role-tag{
+    color: var(--green);
+    font-size: 0.95rem;
+    font-family: var(--poppins);
+    margin-bottom: 0.8rem;
+}
+.about-header-social{
+    display: flex;
+    gap: 0.6rem;
+}
+.about-social-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+.about-social-icon:hover{
+    border-color: var(--green);
+    color: var(--green);
+}
+/* --- Narrative --- */
+.about-narrative{
+    margin: 0 0 2rem;
+}
+.about-narrative p{
+    margin: 0.75rem 0;
+}
+/* --- Section label --- */
+.about-card-label{
+    font-family: var(--poppins);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--green);
+    margin-bottom: 0.3rem;
+}
+.about-card-sub{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+/* --- Two-column: quotes | info --- */
+.about-two-col{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.about-quotes-card{
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.about-quotes-card blockquote{
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.85;
+    border-left: 3px solid var(--green);
+    padding-left: 0.9rem;
+    margin: 0.8rem 0;
+    line-height: 1.6;
+}
+.about-info-card{
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.about-info-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about-info-card li{
+    display: flex;
+    gap: 0.9rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+}
+.about-info-card li:last-child{
+    border-bottom: none;
+}
+.about-info-card li > span:first-child{
+    color: var(--green);
+    min-width: 18px;
+    text-align: center;
+    padding-top: 2px;
+}
+.about-info-card li > span:last-child{
+    flex: 1;
+    line-height: 1.5;
+}
+/* --- Horizontal timeline --- */
+.about-timeline-section{
+    margin-bottom: 2.5rem;
+}
+.about-timeline-h-wrap{
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+.about-timeline-h{
+    display: flex;
+    gap: 0;
+    min-width: 700px;
+    position: relative;
+    padding-top: 2.5rem;
+}
+.about-timeline-h::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255,255,255,0.1);
+}
+.tl-h-item{
+    flex: 1;
+    position: relative;
+    padding: 0 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.tl-h-dot{
+    position: absolute;
+    top: -2.15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--green);
+    border: 2px solid var(--green);
+    z-index: 1;
+}
+.tl-h-dot-award{
+    background: #fff;
+}
+.tl-h-year{
+    font-size: 0.72rem;
+    font-weight: 700;
+    font-family: var(--poppins);
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+.tl-h-card{
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
     flex: 1;
 }
-.about-content li span:first-child{
+.tl-h-card strong{
+    display: block;
     color: #fff;
-    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.82rem;
+    text-align: left;
 }
-.about .row-right h3{
+.tl-h-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tl-h-card ul li{
+    opacity: 0.75;
+    padding: 0.1rem 0;
+}
+.tl-h-card ul li::before{
+    content: '· ';
     color: var(--green);
-    font-size: 1.5rem;
 }
-.about .row-right h3 span{
+/* --- Tools grid --- */
+.about-tools-section{
+    margin-bottom: 2rem;
+}
+.about-tools-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+.about-tool-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    min-width: 72px;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.7);
+    transition: var(--transition);
+}
+.about-tool-item i{
+    font-size: 1.5rem;
+    color: var(--green);
+}
+.about-tool-item:hover{
+    border-color: var(--green);
+    color: #fff;
+}
+/* --- Tagline & CTA --- */
+.about-tagline{
+    color: var(--green);
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+}
+.about-tagline span{
     color: #fff;
     font-weight: 400;
 }
-.about .row-right .btn a{
+.about .home-pg-btn .btn a{
     color: black;
 }
 
@@ -992,13 +1227,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     /* about page */
-    .about .row-left{
-        width: 400px;
-        height: 400px;
-        margin: 1rem auto;
-        overflow: hidden;
-        border-radius: 50%;
-        position: relative;
+    .about-two-col{
+        grid-template-columns: 1fr 1fr;
     }
     /* resume page */
     .resume .row{
@@ -1114,13 +1344,7 @@
         transform: translateY(-14px);
     }
 
-    /* about page */
-    .about .row{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        grid-gap: 2rem;
-    }
+    /* about page — single column layout, header handled by flexbox */
     /* interests page */
     .interests .item{
         flex: 0 0 calc(33.33% - 2rem);
