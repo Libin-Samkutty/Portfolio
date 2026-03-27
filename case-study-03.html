@@ -78,6 +78,14 @@
             <span class="cs-tag">Outcome: Continuous uptime validation with automated alerting</span>
         </div>
 
+        <div class="cs-summary-block">
+            <div class="cs-summary-row"><strong>Context</strong><span>Production chatbot serving ~50K monthly users with no automated uptime detection; downtime discovered reactively via user reports</span></div>
+            <div class="cs-summary-row"><strong>Problem</strong><span>Bot failures went undetected for hours because QA had no visibility into production state after deployment</span></div>
+            <div class="cs-summary-row"><strong>Decision</strong><span>Extend QA scope into production reliability by building a persistent health-check pipeline on AWS EC2</span></div>
+            <div class="cs-summary-row"><strong>System</strong><span>Hourly health-check pipeline using Python and Botium scripts on AWS EC2, with real-time Slack alerts on failure</span></div>
+            <div class="cs-summary-row"><strong>Result</strong><span>Real-time downtime detection; 50K+ monthly users protected from silent production failures going unaddressed</span></div>
+        </div>
+
         <div class="meta">By Libin Samkutty &nbsp;</div>
 
         <img src="assets/health-monitoring-system.png" alt="Automated Chatbot Health Monitoring System">

@@ -78,6 +78,14 @@
             <span class="cs-tag">Outcome: Near-zero test duplication across platforms</span>
         </div>
 
+        <div class="cs-summary-block">
+            <div class="cs-summary-row"><strong>Context</strong><span>Same chatbot platform running on two separate channels (WhatsApp and Facebook Messenger) with identical NLP logic but different transport layers</span></div>
+            <div class="cs-summary-row"><strong>Problem</strong><span>Duplicate test scripts per channel created maintenance overhead and caused suites to drift from each other over time</span></div>
+            <div class="cs-summary-row"><strong>Decision</strong><span>Design a channel-abstracted architecture using Botium's connector model: one script set, multiple channel targets</span></div>
+            <div class="cs-summary-row"><strong>System</strong><span>140+ test scripts running across both channels via environment-specific configurations, with shared conversation fragments and no per-channel duplication</span></div>
+            <div class="cs-summary-row"><strong>Result</strong><span>Near-zero test duplication; adding a new channel requires only a new connector config, not a new test suite</span></div>
+        </div>
+
         <div class="meta">By Libin Samkutty &nbsp;</div>
 
         <img src="assets/multi-channel-testing.png" alt="Multi-Channel Chatbot Testing Architecture">

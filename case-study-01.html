@@ -78,6 +78,14 @@
             <span class="cs-tag">Outcome: 60% reduction in regression effort</span>
         </div>
 
+        <div class="cs-summary-block">
+            <div class="cs-summary-row"><strong>Context</strong><span>Conversational AI health chatbot serving ~50K monthly users across WhatsApp and Facebook Messenger</span></div>
+            <div class="cs-summary-row"><strong>Problem</strong><span>5 FTE-day manual regression cycle with zero automated coverage - regression was a release bottleneck</span></div>
+            <div class="cs-summary-row"><strong>Decision</strong><span>Build a Botium-based automation layer using modular conversation fragments (.pconvo files)</span></div>
+            <div class="cs-summary-row"><strong>System</strong><span>140+ flows automated across both channels, with health-check scripts and Slack alerting for production monitoring</span></div>
+            <div class="cs-summary-row"><strong>Result</strong><span>75% automated regression coverage &middot; 60% effort reduction &middot; manual cycle reduced from ~5 FTE days to ~2 FTE days</span></div>
+        </div>
+
         <div class="meta">By Libin Samkutty &nbsp;</div>
 
         <img src="assets/botium-chatbot-testing.png" alt="Scaling Chatbot Regression Testing with Botium">
@@ -115,7 +123,7 @@
 
         <h3>Scope of Automation Coverage</h3>
 
-        <p>The test suite was built out to <strong>140 or more automated conversational test flows</strong> covering four primary dimensions:</p>
+        <p>The test suite was built out to <strong>more than 140 automated conversational test flows</strong> covering four primary dimensions:</p>
         <ul>
             <li><strong>Intent validation:</strong> Does the bot correctly classify what the user is trying to say, including when phrased in shorthand or with typos?</li>
             <li><strong>End-to-end conversation paths:</strong> Does a complete journey from first message to content delivery work without failures?</li>

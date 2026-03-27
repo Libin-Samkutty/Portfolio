@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Automation Projects - Test automation frameworks by Libin Samkutty">
+    <meta name="description" content="QA automation systems by Libin Samkutty - Robot Framework regression suite, pytest API framework, Botium chatbot testing (140+ flows), performance and security testing.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Automation Projects | Libin Samkutty">
-    <meta property="og:description" content="Test automation frameworks built by Libin Samkutty - Robot Framework UI suite, pytest API framework, Botium chatbot testing, and open-source PyPI package.">
+    <meta property="og:description" content="QA automation systems by Libin Samkutty - Robot Framework regression suite, pytest API framework, Botium chatbot testing (140+ flows), performance and security testing.">
     <meta property="og:url" content="https://libin-samkutty.github.io/automation-projects.html">
     <meta property="og:image" content="https://libin-samkutty.github.io/assets/og-preview.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Automation Projects | Libin Samkutty">
-    <meta name="twitter:description" content="Test automation frameworks built by Libin Samkutty - Robot Framework UI suite, pytest API framework, Botium chatbot testing, and open-source PyPI package.">
+    <meta name="twitter:description" content="QA automation systems by Libin Samkutty - Robot Framework regression suite, pytest API framework, Botium chatbot testing (140+ flows), performance and security testing.">
     <meta name="twitter:image" content="https://libin-samkutty.github.io/assets/og-preview.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/utility.css">
@@ -73,7 +73,7 @@
                 <h2>My Automation Work</h2>
             </div>
         </div>
-        <p class="text">Automation frameworks and test suites built and maintained across professional engagements, covering UI regression, API validation, chatbot testing, and performance and security testing.</p>
+        <p class="text">Production QA systems built at Jeavio India - each covering a distinct failure surface, with defined scope, stack, and measurable outcome. These are not demo projects: they run on real release cycles and protect real users.</p>
 
         <div class="row">
             <div class="item">
@@ -82,14 +82,15 @@
                 </div>
                 <span>Robot Framework + Python</span>
                 <h2>UI / Regression Automation Framework &nbsp;<a href="https://github.com/Libin-Samkutty/robotframework-dashboard-ui-tests-demo" target="_blank" style="font-size:0.75em; font-weight:400;"><i class="fas fa-external-link-alt"></i></a></h2>
+                <span class="op-badge"><i class="fas fa-sync-alt"></i>&nbsp; Runs on every release</span>
                 <p class="text">
-                    Built a regression automation suite from scratch covering web dashboard UI, WhatsApp chatbot, and REST API testing.<br><br>
-                    • Page Object Model structure separating locators, actions, and assertions for maintainability and reusability.<br>
-                    • Achieved 90% coverage for the dashboard smoke suite from a zero baseline.<br>
+                    <strong>Problem:</strong> No regression baseline existed for a production web dashboard and chatbot. Every release required manual verification across UI, API, and chatbot flows.<br><br>
+                    • Page Object Model structure separating locators, actions, and assertions.<br>
                     • Three test domains: web UI (SeleniumLibrary), chatbot automation, and REST API validation (RequestsLibrary).<br>
-                    • Data-driven testing with CSV-based test scenarios and parameterized staging/production environments.<br>
-                    • Dockerized execution environment with GitHub Actions CI matrix and timestamped artifact uploads.<br>
-                    • BDD-style Given/When/Then syntax with HTML reporting for test execution results.
+                    • Data-driven execution with CSV-based scenarios and parameterized staging/production environments.<br>
+                    • Dockerized execution with GitHub Actions CI matrix and timestamped artifact uploads.<br>
+                    • BDD-style Given/When/Then syntax with HTML reporting.<br><br>
+                    <strong>Result: 90% smoke coverage from zero baseline. Integrated into CI for every release cycle.</strong>
                 </p>
                 <div class="oss-stats">
                     <a href="https://github.com/Libin-Samkutty/robotframework-dashboard-ui-tests-demo" target="_blank"><i class="fab fa-github"></i> View Source on GitHub</a>
@@ -103,13 +104,17 @@
                 <span>Python + pytest</span>
                 <h2>API Automation Framework</h2>
                 <p class="text">
-                    Spearheaded the implementation of an API automation framework in collaboration with team members.<br><br>
-                    • Response schema validation and assertion.<br>
+                    <strong>Problem:</strong> API regressions were caught manually and inconsistently, with no structured schema validation or negative test coverage.<br><br>
+                    • Response schema validation and assertion against expected contracts.<br>
                     • Negative testing for error paths and edge cases.<br>
-                    • Data-driven test execution.<br>
-                    • Coverage for core API functionalities across the platform.<br><br>
-                    <strong>See also:</strong> <a href="qa-portfolio.html#oss">api-test-data-generator</a> &dash; open-source PyPI package for schema-driven API test data generation.
+                    • Data-driven test execution using parameterized inputs.<br>
+                    • Integrated with <a href="qa-portfolio.html#oss">api-test-data-generator</a> - open-source PyPI package for schema-driven API test data generation.<br><br>
+                    <strong>Result: Core API paths validated on every release. Test data generation open-sourced as a reusable PyPI package.</strong>
                 </p>
+                <div class="oss-stats">
+                    <a href="https://github.com/Libin-Samkutty/api-test-data-generator" target="_blank"><i class="fab fa-github"></i> api-test-data-generator on GitHub</a>
+                    <a href="qa-portfolio.html#oss" style="margin-left:1rem;"><i class="fas fa-arrow-right"></i> View in QA Portfolio</a>
+                </div>
             </div>
 
             <div class="item">
@@ -118,14 +123,16 @@
                 </div>
                 <span>Botium + Node.js</span>
                 <h2>Chatbot Testing Framework &nbsp;<a href="https://github.com/Libin-Samkutty/botium-chatbot-test-framework-demo" target="_blank" style="font-size:0.75em; font-weight:400;"><i class="fas fa-external-link-alt"></i></a></h2>
+                <span class="op-badge"><i class="fas fa-heartbeat"></i>&nbsp; Hourly health checks in production</span>
                 <p class="text">
-                    Implemented a production-grade chatbot testing framework using Botium for multi-channel coverage across Facebook Messenger and WhatsApp.<br><br>
-                    • Multi-channel testing with environment-specific configurations (staging and production).<br>
-                    • Reusable conversation fragments (.pconvo files) for modular, maintainable test suites.<br>
+                    <strong>Problem:</strong> 140+ conversational flows on WhatsApp and Facebook Messenger had no automation. A 5 FTE-day manual regression cycle ran before every release.<br><br>
+                    • Multi-channel coverage with environment-specific configurations (staging and production).<br>
+                    • Modular .pconvo conversation fragments for reusable, maintainable test suites.<br>
                     • Webhook-based testing with Redis inbound proxy and custom WhatsApp connector with HMAC signing.<br>
-                    • Custom health check scripts for continuous bot availability monitoring with Slack alerting for real-time downtime alerts.<br>
-                    • Mochawesome HTML reporting with AWS S3 integration for report uploads and email/Slack notifications.<br>
-                    • Multi-CI support: GitHub Actions, Jenkins, GitLab CI, and AWS CodePipeline.
+                    • Health check scripts for hourly bot availability monitoring with real-time Slack alerting.<br>
+                    • Mochawesome HTML reporting with AWS S3 upload and email/Slack notifications.<br>
+                    • Multi-CI support: GitHub Actions, Jenkins, GitLab CI, and AWS CodePipeline.<br><br>
+                    <strong>Result: 75% automated regression coverage. 60% reduction in regression effort. Health checks run hourly in production on AWS EC2.</strong>
                 </p>
                 <div class="oss-stats">
                     <a href="https://github.com/Libin-Samkutty/botium-chatbot-test-framework-demo" target="_blank"><i class="fab fa-github"></i> View Source on GitHub</a>
@@ -139,10 +146,11 @@
                 <span>Apache JMeter + OWASP ZAP</span>
                 <h2>Performance and Security Test Suite</h2>
                 <p class="text">
-                    Built performance and security testing suites for API and web application validation.<br><br>
+                    <strong>Problem:</strong> Performance baselines and security posture were validated manually and inconsistently - no sprint-level cadence, no documented baselines.<br><br>
                     • API performance, load, and stress testing using Apache JMeter.<br>
-                    • Per-sprint security testing and reporting using OWASP ZAP.<br>
-                    • Delivered overall security reports to the team at the end of each sprint cycle.
+                    • Per-sprint security scanning and reporting using OWASP ZAP.<br>
+                    • Reports delivered to the team at the close of each sprint cycle.<br><br>
+                    <strong>Result: Established a repeatable per-sprint cadence for both performance and security validation throughout the development cycle.</strong>
                 </p>
             </div>
         </div>
