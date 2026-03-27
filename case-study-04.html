@@ -78,6 +78,14 @@
             <span class="cs-tag">Outcome: Early performance regression detection with historical baseline</span>
         </div>
 
+        <div class="cs-summary-block">
+            <div class="cs-summary-row"><strong>Context</strong><span>Conversational AI chatbot with no release-level performance baseline; response times varied but were never formally tracked</span></div>
+            <div class="cs-summary-row"><strong>Problem</strong><span>Performance regressions were identified late or not at all, leaving infrastructure planning without data</span></div>
+            <div class="cs-summary-row"><strong>Decision</strong><span>Instrument existing Botium flows to capture response-time data per release and track trends over time</span></div>
+            <div class="cs-summary-row"><strong>System</strong><span>Custom performance-aware Botium flows running on every release and on a scheduled cadence, with historical baseline tracking</span></div>
+            <div class="cs-summary-row"><strong>Result</strong><span>Early performance regression detection across release cycles; response-time data used for data-driven infrastructure planning</span></div>
+        </div>
+
         <div class="meta">By Libin Samkutty &nbsp;</div>
 
         <img src="assets/performance-monitoring.png" alt="Monitoring Chatbot Performance Through Automated Test Flows">
