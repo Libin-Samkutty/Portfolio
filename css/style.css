@@ -1969,6 +1969,14 @@
     font-family: var(--sans);
     font-size: 0.875rem;
     line-height: 1.5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.cs-summary-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .cs-summary-row strong {
