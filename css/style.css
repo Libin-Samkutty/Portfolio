@@ -2036,6 +2036,22 @@
     margin-bottom: 0.8rem;
 }
 
+.cs-featured-badge {
+    display: block;
+    width: fit-content;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #111 !important;
+    background: var(--green);
+    border-radius: 3px;
+    padding: 0.15rem 0.55rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 /* =============================================
    CASE STUDIES - STRUCTURED CARD SUMMARY
    ============================================= */

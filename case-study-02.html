@@ -181,13 +181,13 @@ Of course. I can help with that. Which method would you like to learn about firs
 
         <p>Coverage metrics are only useful if they are tracking the right things. On a multi-channel product, the risk profile includes channel-specific failure modes that do not appear in a generic feature list. A conversation flow might work correctly in terms of routing and content but render incorrectly on Messenger because of a character limit or a button format issue.</p>
 
-        <p>Maintaining a risk register alongside the test suite - mapping known platform-specific risks to specific test or manual verification coverage - keeps the team honest about where the real gaps are.</p>
+        <p>Maintaining a risk register alongside the test suite, mapping known platform-specific risks to specific test or manual verification coverage, keeps the team honest about where the real gaps are. On this project, WhatsApp and Messenger each had specific rendering behaviours that did not appear in the shared test scripts: button formatting constraints on Messenger and message length limits on WhatsApp that required supplemental smoke checklists run against each channel specifically.</p>
 
         <h3>Outcome</h3>
 
         <p>The practical result of this architecture was that testing both platforms stopped being a conscious decision and became a default behavior. In the previous world, testing WhatsApp and then testing Messenger was a checklist item that someone had to remember to complete before each release. If the release was running late, the second platform was tempting to skip.</p>
 
-        <p>Under the new architecture, both platforms were covered on every automated run, without anyone having to decide to include them. <strong>The best quality controls are the ones that do not depend on anyone remembering to activate them.</strong></p>
+        <p>Under the new architecture, both platforms were covered on every automated run, without anyone having to decide to include them. When a core flow changed, the update was made once in the shared script set and both channels reflected it immediately. Previously, this would have required parallel edits in two separate script sets, with a real chance that one would fall behind. <strong>The best quality controls are the ones that do not depend on anyone remembering to activate them.</strong></p>
 
         <hr>
 
