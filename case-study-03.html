@@ -228,6 +228,8 @@ CONTAINS: family planning</code></pre>
             <li><strong>Informed post-mortems.</strong> The archived health check history made it possible to pinpoint exactly when failures began, which change preceded them, and how long they persisted - turning retrospective analysis from guesswork into a structured process.</li>
         </ul>
 
+        <p>One incident that illustrated this clearly was a platform-level outage at turn.io, the messaging infrastructure provider. The health monitoring system detected the failure within the hour and the team raised a support ticket with turn.io before any users had reported issues. The archived health check logs gave a precise timeline that made the incident report straightforward to produce. Without the monitoring pipeline, the failure would have been discovered through user complaints, with no clear record of when it started.</p>
+
         <p>For a health chatbot where users are depending on the system to function, the shift from hoping it is working to knowing it is working is not a minor improvement. It is the baseline standard the product needed to meet.</p>
 
         <hr>

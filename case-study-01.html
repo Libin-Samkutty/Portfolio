@@ -177,19 +177,19 @@ Great, let's get started. Which topic would you like to explore first?</code></p
 
         <p>One of the most important shifts on this project was treating automated test flows as a deliverable, not an afterthought. Every new feature added to the chatbot came with a corresponding test flow that was merged into the regression suite as part of the same development cycle. This prevented the test suite from falling behind the product and ensured that coverage expanded naturally alongside the feature set.</p>
 
-        <p>For development teams that are used to thinking about QA as a phase that happens after development, this requires a shift in how work is planned. Test flow authoring should be estimated and tracked the same way feature work is.</p>
+        <p>For development teams that are used to thinking about QA as a phase that happens after development, this requires a shift in how work is planned. Test flow authoring should be estimated and tracked the same way feature work is. The one time this slipped on this project, a flow shipped without a corresponding test and went out with a broken fallback that automation would have caught in under ten minutes.</p>
 
         <h3>Keep the Feedback Loop Short</h3>
 
         <p>The value of an automated regression suite is proportional to how quickly it runs and how quickly failures are surfaced. A suite that takes four hours to complete and emails results to a shared inbox the following morning does not change development behavior. A suite that runs in under thirty minutes and posts results to a team Slack channel does.</p>
 
-        <p>On this project, the automated suite ran as part of the release process and results were surfaced immediately. Engineers saw failures before the release was approved, making addressing regressions a same-day activity rather than a retrospective one.</p>
+        <p>The 30-minute Slack notification target on this project came directly from a release where it did not exist. A regression was introduced at deployment and was not discovered until the following morning, 18 hours later. On this project after that, the automated suite ran as part of the release process and results were surfaced immediately, making regressions a same-day activity rather than a retrospective one.</p>
 
         <h3>Document What the Automation Does Not Cover</h3>
 
         <p>This is a practice that is often skipped because it requires admitting that coverage is incomplete. Skipping it is worse. When everyone assumes the automation covers everything, manual verification steps stop happening. Failures slip through and the root cause is harder to trace.</p>
 
-        <p>Maintaining an explicit, short document listing known automation gaps and the manual procedures that address them keeps the whole team honest. It also helps with onboarding: a new QA engineer or developer can read it and understand exactly what to check manually before a release.</p>
+        <p>The nudge-triggered flows and database-level validation gaps in this project were explicit decisions, not oversights. Documenting them meant they received focused manual attention every release cycle instead of being forgotten. Maintaining an explicit, short document listing known gaps and the manual procedures that address them keeps the whole team honest about what is and is not verified before each release.</p>
 
         <h3>Outcome</h3>
 

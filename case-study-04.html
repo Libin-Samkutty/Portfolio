@@ -186,10 +186,10 @@
         <p>The performance monitoring program produced four measurable improvements:</p>
 
         <ul>
-            <li><strong>Early regression detection.</strong> Performance regressions that would previously have gone unnoticed until user complaints surfaced were caught within one or two release cycles of their introduction.</li>
-            <li><strong>Confident releases.</strong> Deployments touching performance-sensitive code were accompanied by explicit data confirming no degradation - replacing subjective confidence with an objective signal.</li>
+            <li><strong>Early regression detection.</strong> Performance regressions that would previously have gone unnoticed until user complaints surfaced were caught within one or two release cycles of their introduction. A feature change caused a 17% average latency degradation across flows; the baseline comparison flagged it on the release it was introduced, before it reached production users.</li>
+            <li><strong>Confident releases.</strong> Deployments touching performance-sensitive code were accompanied by explicit data confirming no degradation, replacing subjective confidence with an objective signal.</li>
             <li><strong>Faster investigations.</strong> Root cause analysis that would previously have taken a day or more was reduced to a focused one-hour exercise because the timeline correlation was already available.</li>
-            <li><strong>Informed infrastructure planning.</strong> The historical performance baseline enabled capacity planning discussions grounded in observed data rather than estimates.</li>
+            <li><strong>Informed infrastructure planning.</strong> The historical baseline tracked the full end-to-end user flow improving from 3 minutes 52 seconds to 3 minutes 8 seconds over a period of targeted optimisation, enabling capacity planning discussions grounded in observed data rather than estimates.</li>
         </ul>
 
         <p>Quality engineering that treats performance as someone else's problem will eventually be held accountable for performance failures that were preventable. The most straightforward way to avoid that outcome is to own the monitoring before the failures happen.</p>
